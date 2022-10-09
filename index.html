@@ -73,51 +73,54 @@
             </div>
         </nav>
     </section>
+    <header class="container">
+        <div class="text-warning">
+            <ul class="list-item d-md-flex d-sm-block text-center justify-content-between " id="category-list">
 
-
-
-    <!-- sorting  -->
-    <section class="container mt-3">
-        <h4 class="fw-bolder me-3">Sort by View:</h4>
-    </section>
-    <section class="container mx-5">
-        <div class="card w-100" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">The best online vintage clothing stores to shop more sustainably this summer</h5>
-                <p class="card-text">There’s no better time than now to familiarise yourself with the best online
-                    vintage clothing stores. If you want to overhaul your wardrobe for the long run, mixing vintage with
-                    high street clothing is the key to being trendy as well as sustainable.
-
-                    But vintage shopping isn’t easy, you can easily spend hours in a store and walk out with...</p>
-                <h5>Jane Cooper</h5>
-            </div>
+            </ul>
         </div>
-
-        <div class="card w-100 d-flex" style="width: 18rem d-flex">
-            <!-- <div class="col-md-2 col-12 d-flex justify-content-cente">
-                <img class="" src="images/bags/bag-1.png" alt="">
-            </div> -->
-            <div class="card-body">
-                <h5 class="card-title">The best fashion influencers to follow for sartorial inspiration</h5>
-                <p class="card-text">From our favourite UK influencers to the best missives from Milan and the coolest
-                    New Yorkers, read on some of the best fashion blogs out there, and for even more inspiration, do
-                    head to our separate black fashion influencer round-up.
-
-                    Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black Friday,
-                    Missoma Black Friday and Gucci Black Friday....</p>
-                <h5>Jane Cooper</h5>
-                <a href="#" class </div>
-            </div>
-
-
-
+    </header>
+    <section class="container bg-white d-none  py-3 px-2" id="amount">
+        <h4>
+            <span id="total-mount">0</span>there are many items <span id="category"
+                style="color: rgb(20, 56, 162);"></span>
+        </h4>
     </section>
+
+
+
+    <section class="container d-flex my-3">
+        <h4 class="fw-bolder me-3">Sort by View:</h4>
+        <div class="dropdown">
+            <button id="button1"class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Default
+            </button>
+            <ul class="dropdown-menu">
+                <li onclick="setValue(1)"><a class="dropdown-item" href="#">Default</a></li>
+                <li onclick="setValue(0)"><a class="dropdown-item" href="#">Unsorted</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="my-5 d-none" id="spinner">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </section>
+    <section class="container">
+<div class="my-5">
+            <div class="card mb-3 " id="announce">
+ </div>
+        </div>
+</section>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+    <script src="js/news.js"></script>
 </body>
 
 </html>
